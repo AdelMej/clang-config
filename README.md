@@ -61,6 +61,20 @@ use_clang C K&R
 clang-format -i *.c *.h
 ```
 
+## 🎨 Available Styles
+
+### 💻 C
+- K&R
+- Google
+- Betty
+
+### 🐍 Python
+- Google
+- PEP8-ish
+
+### ☕ Java (coming soon)
+- Google
+
 ## 📌 Notes
 C K&R & Google use spaces for indentation
 
