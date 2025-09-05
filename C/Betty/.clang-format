@@ -1,0 +1,11 @@
+# C Betty style: aligns with Holberton Betty linter
+BasedOnStyle: Google
+IndentWidth: 4
+TabWidth: 4
+UseTab: ForIndentation
+Language: C
+Standard: C11
+ColumnLimit: 80
+BreakBeforeBraces: Allman
+AllowShortFunctionsOnASingleLine: false
+PointerAlignment: Left
