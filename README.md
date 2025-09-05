@@ -1,8 +1,14 @@
+```markdown
+_____ _                                          __ _       
+/  __ \ |                                        / _(_)      
+| /  \/ | __ _ _ __   __ _ ______ ___ ___  _ __ | |_ _  __ _ 
+| |   | |/ _` | '_ \ / _` |______/ __/ _ \| '_ \|  _| |/ _` |
+| \__/\ | (_| | | | | (_| |     | (_| (_) | | | | | | | (_| |
+ \____/_|\__,_|_| |_|\__, |      \___\___/|_| |_|_| |_|\__, |
+                      __/ |                             __/ |
+                     |___/                             |___/ 
+```
 # clang-configs
-
-> Multi-language, multi-style, plug-and-play formatting arsenal.  
-> Break stuff, write code, auto-format like a pro. Chaos approved. 😏
-
 ## 🧩 Overview
 
 `clang-configs` is a collection of `.clang-format` files for C, Python, and later Java (secret sauce 😎).  
