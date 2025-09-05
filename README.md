@@ -1,12 +1,12 @@
 ```
- _____ _                                          __ _           
-/  __ \ |                                        / _(_)          
-| /  \/ | __ _ _ __   __ _ ______ ___ ___  _ __ | |_ _  __ _ ___ 
-| |   | |/ _` | '_ \ / _` |______/ __/ _ \| '_ \|  _| |/ _` / __|
-| \__/\ | (_| | | | | (_| |     | (_| (_) | | | | | | | (_| \__ \
- \____/_|\__,_|_| |_|\__, |      \___\___/|_| |_|_| |_|\__, |___/
-                      __/ |                             __/ |    
-                     |___/                             |___/     
+_____ _                                          __ _       
+/  __ \ |                                        / _(_)      
+| /  \/ | __ _ _ __   __ _ ______ ___ ___  _ __ | |_ _  __ _ 
+| |   | |/ _` | '_ \ / _` |______/ __/ _ \| '_ \|  _| |/ _` |
+| \__/\ | (_| | | | | (_| |     | (_| (_) | | | | | | | (_| |
+ \____/_|\__,_|_| |_|\__, |      \___\___/|_| |_|_| |_|\__, |
+                      __/ |                             __/ |
+                     |___/                             |___/ 
 ```
 # clang-configs
 ## 🧩 Overview
@@ -23,6 +23,10 @@ Use it to instantly format any project, switch styles on the fly, and maintain *
 ---
 
 ## ⚡Installation
+
+> 🐚 **Shell Requirement:**  
+> The `use_clang()` helper function requires **Zsh**.  
+> If you are using Bash or another shell, you can still manually copy the `.clang-format` files from `~/clang-configs/<language>/<style>/` into your project.
 
 Clone the repo and run the installer:
 
