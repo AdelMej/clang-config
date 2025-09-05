@@ -35,7 +35,7 @@ Use it to instantly format any project, switch styles on the fly, and maintain *
 
 ### Installing clang-configs
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/AdelMej/clang-config
 cd clang-configs
 ./install.sh
 source ~/.zshrc
