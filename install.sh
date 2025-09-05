@@ -14,14 +14,21 @@ fi
 mkdir -p "$HOME/clang-configs"
 echo "Created ~/clang-configs directory (or already exists)"
 
+# Copies all of the config files
+for dir in */; do
+	if [ -f "$dir/.clang-format" ]; then
+		cp -r "$dir" "$HOME/clang-configs/"
+	fi
+done
+
 # Append the function if not already present
 if ! grep -q "use_clang()" "$RC_FILE"; then
 	cat >>"$RC_FILE" <<'EOF'
 
-use_clang() {
-    cp ~/clang-configs/$1/$2/.clang-format ./
-    echo "Clang-format for $1 ($2 style) copied!"
-}
+	use_clang() {
+		cp ~/clang-configs/$1/$2/.clang-format ./
+		echo "Clang-format for $1 ($2 style) copied!"
+	}
 EOF
 	echo "use_clang() added to $RC_FILE"
 else
