@@ -1,11 +1,10 @@
 # C K&R style
 BasedOnStyle: LLVM
-IndentWidth: 4        # spaces per indent level
-TabWidth: 4           # tab width if tabs were used
-UseTab: Never         # spaces only, no tabs
-Language: C
-Standard: C11
-ColumnLimit: 80       # wrap lines at 80 chars
-BreakBeforeBraces: Allman   # braces on new lines
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ColumnLimit: 80
+BreakBeforeBraces: Attach   # K&R braces style
 AllowShortFunctionsOnASingleLine: false
 PointerAlignment: Left
+
