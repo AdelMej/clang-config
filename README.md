@@ -23,27 +23,23 @@ Use it to instantly format any project, switch styles on the fly, and maintain *
 ---
 
 ## ⚡Installation
+### Requirements
+- **Zsh**: for the `use_clang()` helper function  
+- **clang-format**: to actually format your code  
 
-> 🐚 **Shell Requirement:**  
-> The `use_clang()` helper function requires **Zsh**.  
-> If you are using Bash or another shell, you can still manually copy the `.clang-format` files from `~/clang-configs/<language>/<style>/` into your project.
+### Installing clang-format
+- **Ubuntu/Debian:** `sudo apt install clang-format -y`  
+- **Fedora:** `sudo dnf install clang-tools-extra -y`  
+- **macOS:** `brew install clang-format`  
+- **Windows:** Install LLVM from [https://llvm.org/](https://llvm.org/) and add `clang-format.exe` to PATH  
 
-Clone the repo and run the installer:
-
+### Installing clang-configs
 ```bash
 git clone <your-repo-url>
 cd clang-configs
 ./install.sh
 source ~/.zshrc
 ```
-
-The install.sh script will:
-
-Create ~/clang-configs if it doesn't exist
-
-Copy all style files
-
-Add a handy use_clang() function to your .zshrc for easy style switching
 
 ## 🛠️Usage
 Copy the style you want into your project:
