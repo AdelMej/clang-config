@@ -51,10 +51,6 @@ source ~/.bashrc  # if using Bash
 - Google
 - Betty
 
-### 🐍 Python
-- Google
-- PEP8-ish
-
 ### ☕ Java (coming soon)
 - Google
 

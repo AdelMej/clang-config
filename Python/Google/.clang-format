@@ -1,6 +1,0 @@
-# Python Google style
-BasedOnStyle: Google
-IndentWidth: 4        # spaces per indent level
-UseTab: Never         # spaces only
-ColumnLimit: 80       # wrap lines at 80 chars
-BreakBeforeBraces: None

@@ -1,6 +1,0 @@
-# Python PEP8-ish style
-BasedOnStyle: Google
-IndentWidth: 4        # spaces per indent level
-UseTab: Never         # spaces only
-ColumnLimit: 79       # classic PEP8 limit
-BreakBeforeBraces: None
