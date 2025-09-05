@@ -1,12 +1,10 @@
 # C Google style
 BasedOnStyle: Google
-IndentWidth: 4    # spaces per indent level
+IndentWidth: 4          # spaces per indent level
 TabWidth: 4
-UseTab: Never     # spaces only
-Language: C
-Standard: C11
-ColumnLimit: 80   # wrap lines at 80 chars
-BreakBeforeBraces: Allman
+UseTab: Never           # spaces only
+ColumnLimit: 80         # wrap lines at 80 chars
+BreakBeforeBraces: Attach   # Google style = K&R-like braces (not Allman)
 AllowShortFunctionsOnASingleLine: false
 PointerAlignment: Left
 

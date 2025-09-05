@@ -2,10 +2,9 @@
 BasedOnStyle: Google
 IndentWidth: 4
 TabWidth: 4
-UseTab: ForIndentation
-Language: C
-Standard: C11
+UseTab: ForIndentation     # tabs for indentation (Betty requires this)
 ColumnLimit: 80
-BreakBeforeBraces: Allman
+BreakBeforeBraces: Allman  # braces on new line (Betty enforces this)
 AllowShortFunctionsOnASingleLine: false
 PointerAlignment: Left
+
