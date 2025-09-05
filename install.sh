@@ -1,30 +1,31 @@
 #!/bin/bash
 
-# -----------------------------
-# Clang-configs installer / updater
-# -----------------------------
+# Detect shell and set rc file
+if [ "$SHELL" = "/usr/bin/zsh" ] || [ "$SHELL" = "/bin/zsh" ]; then
+	RC_FILE="$HOME/.zshrc"
+elif [ "$SHELL" = "/bin/bash" ] || [ "$SHELL" = "/usr/bin/bash" ]; then
+	RC_FILE="$HOME/.bashrc"
+else
+	echo "Unsupported shell, please add use_clang() manually"
+	exit 1
+fi
 
-# Base directory for configs
-CONFIG_DIR=~/clang-configs
+# Create clang-configs directory if missing
+mkdir -p "$HOME/clang-configs"
+echo "Created ~/clang-configs directory (or already exists)"
 
-# Create main clang-configs folder if it doesn't exist
-mkdir -p "$CONFIG_DIR/C"
-mkdir -p "$CONFIG_DIR/Python"
+# Append the function if not already present
+if ! grep -q "use_clang()" "$RC_FILE"; then
+	cat >>"$RC_FILE" <<'EOF'
 
-# Copy style files (overwrite if updating)
-cp -r ./C/* "$CONFIG_DIR/C/"
-cp -r ./Python/* "$CONFIG_DIR/Python/"
-
-echo "Clang-configs installed/updated!"
-
-# Check if use_clang function exists in .zshrc
-if ! grep -q "use_clang()" ~/.zshrc; then
-	echo '
-# Helper function to copy clang-format style
 use_clang() {
     cp ~/clang-configs/$1/$2/.clang-format ./
     echo "Clang-format for $1 ($2 style) copied!"
 }
-' >>~/.zshrc
-	echo "Added use_clang() helper to ~/.zshrc. Reload your shell to use it."
+EOF
+	echo "use_clang() added to $RC_FILE"
+else
+	echo "use_clang() already exists in $RC_FILE"
 fi
+
+echo "Done! Restart your terminal or run 'source $RC_FILE' to use use_clang()"
